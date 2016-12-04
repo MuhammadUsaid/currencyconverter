@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <center>
+        <h1>Currency Converter</h1>
+        <div id="buttons">
+            <input type="button" value="Dollar" onClick="changeId('dollar');">
+            <input type="button" value="Pound" onClick="changeId('pound');">
+            <input type="button" value="Euro" onClick="changeId('euro');">
+            <input type="button" value="Pkr" onClick="changeId('rupee');">
+        </div>
+        <div id="input-box">
+            <input type="number" id="user-input" placeholder="Pakistani Rupees" autofocus>
+            <input type="button" value="convert" onclick="convert();">
+        </div>
+        <div id="output-box">
+            <p><span>Dollars : </span><span id="dollar"></span></p>
+            <p><span>Pounds : </span><span id="pound"></span></p>
+            <p><span>Euros : </span><span id="euro"></span></p>
+        </div>
+    </center>
+    <script src="app.js"></script>
+</body>
+</html>
